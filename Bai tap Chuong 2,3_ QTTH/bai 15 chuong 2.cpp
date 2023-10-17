@@ -2,19 +2,12 @@
 using namespace std;
 int main()
  { 
-   int traudung = 0; 
-   int traunam = 0; 
-   int batraugia = 0;
-   cin.ignore();
-    for (int i = 1; i <= 100; i++) {
-	 if (i % 5 == 0) {
-	  traudung++; }
-	   if (i % 2 == 0) { 
-	   traunam++; } 
-	   if (i % 3 == 0) { 
-	   batraugia++; } 
-	   } cout << "So trau dung an nam: " << traudung<< endl; 
-	   cout << "So trau nam an ba: " << traunam << endl; 
-	   cout << "So ba trau gia an mot: " << batraugia << endl; 
-	   return 0;
+  int x,y,z;
+ 
+    for(int x=1;x<=20;x++)
+		for(int y=1;y<=33;y++)		
+			for(int z=3;z<=100;z+=3)		
+				if ((x+y+z==100)&&(x*5+y*3+z/3==100))			
+					printf("x = %10d, y = %10d, z = %10d \n",x,y,z);									
 }
+
